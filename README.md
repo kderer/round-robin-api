@@ -44,7 +44,7 @@ A SpringBoot web application where Round Robin API is implemented. Since it is n
 Run **`./start_instance.sh`** if you are on Linux. You may need to execute **`chmod u+x start_instance.sh`** first to give permission to run the file.
 - Enter the port number to run the application (assuming you enter 8081, 8082, ...).
 - If JAVA_HOME is not set in the environment variables, you will be asked to enter a JDK path. It should be Java version 17.
-- To start more than one instances repeat the same steps.
+- To start more than one instances, repeat the same steps.
 
 ## Run Round Robin API Application
 - Run **`start_app.bat`** file under round-robin-api-app folder.<br>
