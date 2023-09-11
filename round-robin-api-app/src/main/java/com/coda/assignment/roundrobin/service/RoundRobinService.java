@@ -22,8 +22,12 @@ public class RoundRobinService {
 	private void healthCheck() {
 		managementService.getInstanceList().forEach(instance -> {
 			try {
-				instance.setStatus(
-						InstanceStatus.valueOf(restTemplate.getForObject(instance.getUrl() + "/health", String.class)));
+				InstanceStatus status = InstanceStatus
+						.valueOf(restTemplate.getForObject(instance.getUrl() + "/health", String.class));
+
+				if (instance.getStatus() != InstanceStatus.SLOW) {
+					instance.setStatus(status);
+				}
 			} catch (Exception e) {
 				instance.setStatus(InstanceStatus.DOWN);
 			}
@@ -102,7 +106,7 @@ public class RoundRobinService {
 
 		return backupInstance;
 	}
-	
+
 	public void resetInstanceCounter() {
 		instanceCounter = 0;
 	}

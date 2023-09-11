@@ -38,12 +38,12 @@ public class ManagementController {
 
 	@GetMapping("/{url}")
 	public ApiServerInstance getServerInfo(@PathVariable String url) {
-		return managementService.getInstance(url);
+		return managementService.getInstance("http://" + url);
 	}
 
 	@PutMapping("/{url}/apt/{apt}")
-	public void getServerInfo(@PathVariable String url, @PathVariable Integer apt) {
-		managementService.setInstanceAvarageProcessTime(url, apt);
+	public void updateInstanceApt(@PathVariable String url, @PathVariable Integer apt) {
+		managementService.setInstanceAvarageProcessTime("http://" + url, apt);
 	}
 
 }

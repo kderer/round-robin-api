@@ -40,13 +40,15 @@ A SpringBoot web application where Round Robin API is implemented. Since it is n
  Running unit tests takes more than 30 seconds because there is a unit test to test cool down period which needs to wait 30 seconds.
 
 ## Run API Application
-- Open **`start_instance`** file under api-app folder.<br>
+- Run **`start_instance.bat`** file under api-app folder.<br>
+Run **`./start_instance.sh`** if you are on Linux. You may need to execute **`chmod u+x start_instance.sh`** first to give permission to run the file.
 - Enter the port number to run the application (assuming you enter 8081, 8082, ...).
 - If JAVA_HOME is not set in the environment variables, you will be asked to enter a JDK path. It should be Java version 17.
 - To start more than one instances repeat the same steps.
 
 ## Run Round Robin API Application
-- Open **`start_app`** file under round-robin-api-app folder.<br>
+- Run **`start_app`** file under round-robin-api-app folder.<br>
+Run **`./start_app.sh`** if you are on Linux. You may need to execute **`chmod u+x start_app.sh`** first to give permission to run the file.
 - Enter the port number to run the application (assuming you enter 8080).
 - If JAVA_HOME is not in the environment variables, you will be asked to enter a JDK path.
 
@@ -64,7 +66,7 @@ After adding instances, you can test Round Robin API with tools like Postman.
 ![](https://i.ibb.co/zPDMDSC/round-Robin-test.png)
 
 - Send a POST request to http://localhost:8080/api
-- You can use the below JSON as request body. 
+- You can use the below JSON as request body.<br>
 `
 {
     "game": "Mobile Legends",
