@@ -47,7 +47,7 @@ Run **`./start_instance.sh`** if you are on Linux. You may need to execute **`ch
 - To start more than one instances repeat the same steps.
 
 ## Run Round Robin API Application
-- Run **`start_app`** file under round-robin-api-app folder.<br>
+- Run **`start_app.bat`** file under round-robin-api-app folder.<br>
 Run **`./start_app.sh`** if you are on Linux. You may need to execute **`chmod u+x start_app.sh`** first to give permission to run the file.
 - Enter the port number to run the application (assuming you enter 8080).
 - If JAVA_HOME is not in the environment variables, you will be asked to enter a JDK path.
