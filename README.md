@@ -6,7 +6,7 @@ Round Robin API application is a simple SpringBoot web application.
 It basically receives REST API requests, choose which application API instance to send the request to on a ‘round robin’ basis, and receives the response from the application API
 and send it back to the client.
 
-![](https://i.ibb.co/JdFCLwR/round-Robin.png)
+![](https://i.ibb.co/hF8T7B5/round-Robin.png)
 
 API application is also a simple SpringBoot web application which accepts JSON payload and returns a response with the copy of request and a transaction id.
 
