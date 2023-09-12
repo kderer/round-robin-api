@@ -23,11 +23,19 @@ public class ManagementController {
 
 	@PostMapping
 	public void addInstance(String url) {
+		if (!url.startsWith("http://")) {
+			url = "http://" + url;
+		}
+
 		managementService.addInstance(url);
 	}
 
 	@DeleteMapping
 	public void removeInstance(String url) {
+		if (!url.startsWith("http://")) {
+			url = "http://" + url;
+		}
+
 		managementService.removeInstance(url);
 	}
 
