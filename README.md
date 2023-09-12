@@ -56,9 +56,9 @@ Run **`./start_app.sh`** if you are on Linux. You may need to execute **`chmod u
 - After Round Robin API Application starts successfully, open a web browser and go to [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
 - Under **management-controller** section, you'll see `POST /manage/server` API.
 - Click **Try it out** to make the field editable.
-- Enter instance url **`http://localhost:8081`** format.
+- Enter instance url in **`localhost:8081`** format.
 - Click **Execute** button.
-![](https://i.ibb.co/NFgBZ71/round-Robin-add-Instance.png)
+![](https://i.ibb.co/tbhn5Nd/round-Robin-add-Instance.png)
 
 
 ## Test
